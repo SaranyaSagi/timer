@@ -1,6 +1,6 @@
 const sound = function() {
-  //process.stdout.write('🔊')
   process.stdout.write('\x07');
+  process.stdout.write('🔊')
 }
 
 const scheduleSound = function(delay) {
@@ -17,4 +17,4 @@ for (let num of numbers) {
   scheduleSound(num);
 }
 
-setTimeout(() => {console.log('\n');}, 1000);
+setTimeout(() => {console.log('\n');}, 10000);
